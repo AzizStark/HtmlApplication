@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Selena Gomez</title>
+        <link href="https://fonts.googleapis.com/css?family=Oswald:300|Sacramento" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                 background: #466368;
+                 background: linear-gradient(275deg, #74a8c3 0%, #8363a1 100%);
+                 border-radius: 1px;
+                 font-family: 'Sacramento', cursive;
+                 font-size: 25px;
+                 color: white;
+                }
+
+             .card{
+                  text-align: center;
+                  background: #66FFFF;
+                  box-shadow:   0 0 5px 0px #000, 0 0 0px 1px #0ff;
+                  background: linear-gradient(225deg,  rgb(64,228,149,0.9) -20%,  rgb(37,170,225,0.7) 30%,rgb(255,102,153,0.96) 80%);
+                  max-width: 500px;
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  width: 350px;
+                  height: 200px;
+                  margin-top: -100px;
+                  margin-left: -175px;
+                  border-radius: 4px;
+                  position: fixed;
+                 }
+              .button {
+                  background: linear-gradient(45deg, rgb(37,170,241,0.5), rgb(64,228,149,0.5));
+                  box-shadow:   0 0 0px 0px #000, 0 0 0px 1px #0ff;
+                  border: none;
+                  border-radius: 4px;
+                  padding: 6px 20px;
+                  font-size: 21px;
+                  margin: 220px 182px;
+                  text-align: right;
+                  font-family: 'Oswald', sans-serif;
+                  font-weight: normal;
+                  color: white;
+               }   
+        </style>
+        <script>
+        window.onscroll = function() {myFunction();};
+
+           var header = document.getElementById("myHeader");
+           var sticky = header.offsetTop;
+
+        function myFunction() {
+           if (window.pageYOffset > sticky) {
+              header.classList.add("sticky");
+           } else {
+              header.classList.remove("sticky");
+           }
+        }
+</script>
+
+    </head>
+    <body>
+ 
+        <image style="margin: -50px;height: auto; max-width: 100%;" src="2.png" >
+        <div class="card" id="myHeader">
+              <image src="selpng.png" style=" margin-left: -230px; " width=130 height=200  alt="Poebe">
+              <h2 style=" text-align:right; margin: -195px 25px; font-weight: 150;">Selena Gomez!</h2> <br />
+            <button class="button" onclick="window.location='https://www.selenagomez.com';">Follow!</button>  
+            <h6 style="font-family: 'Oswald', sans-serif; text-align: center; margin: -90%;  margin-left: -59%;font-weight: 300;">" You're stuck in my head! "</h6> <br />
+                    <h5 style="font-size: 10px;font-family: 'sans-serif', sans-serif; text-align: center; margin-top: 107%;">Design © AzizStark 2018</h5> <br />
+        </div>
+    </body>
+</html>
